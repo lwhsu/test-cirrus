@@ -4,6 +4,8 @@ set -x
 
 uname -a
 
+ifconfig
+
 df
 
 ls /etc/pkg/
