@@ -4,6 +4,8 @@ set -x
 
 uname -a
 
+env
+
 ifconfig
 
 df
