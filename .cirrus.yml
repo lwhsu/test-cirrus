@@ -5,12 +5,10 @@ env:
 task:
   env:
     matrix:
-      env:
-        - foo: 123
-        - bar: abc
-      env:
-        - foo: 789
-        - bar: xyz
+      - foo: 123
+        bar: abc
+      - foo: 789
+        bar: xyz
   freebsd_instance:
     matrix:
       image: freebsd-12-0-release-amd64
