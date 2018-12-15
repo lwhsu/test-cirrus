@@ -8,6 +8,10 @@ env
 
 ifconfig
 
+drill pkg.freebsd.org
+
+fetch -o /dev/null http://pkg.FreeBSD.org/FreeBSD:12:amd64/latest/All/libreoffice-6.0.7_1.txz
+
 df
 
 ls /etc/pkg/
