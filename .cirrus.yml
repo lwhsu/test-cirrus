@@ -11,6 +11,7 @@ task:
         baz: xyz
   freebsd_instance:
     matrix:
+      image: freebsd-13-0-current-amd64-v20190117
       image: freebsd-12-0-release-amd64
       image: freebsd-11-2-release-amd64
   install_script:
