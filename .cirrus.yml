@@ -3,12 +3,12 @@ env:
   ARCH: amd64
 
 task:
-  env:
-    matrix:
-      - foo: 123
-        bar: abc
-      - foo: 789
-        baz: xyz
+#  env:
+#    matrix:
+#      - foo: 123
+#        bar: abc
+#      - foo: 789
+#        baz: xyz
   freebsd_instance:
     matrix:
       image: freebsd-13-0-current-amd64-v20190117
