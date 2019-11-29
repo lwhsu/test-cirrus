@@ -11,10 +11,13 @@ task:
 #        baz: xyz
   freebsd_instance:
     matrix:
-      image: freebsd-13-0-current-amd64-v20191127
-      image: freebsd-12-1-release-amd64
-      image: freebsd-11-3-release-amd64
-      image: freebsd-11-3-stable-amd64-v20191127
+      image: freebsd-13-0-snap
+      image: freebsd-12-1
+      image: freebsd-12-1-snap
+      image: freebsd-12-0
+      image: freebsd-12-0-snap
+      image: freebsd-11-3
+      image: freebsd-11-3-snap
 #    cpu: 8
 #    memory: 24G
 #  install_script:
