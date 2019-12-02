@@ -11,13 +11,13 @@ task:
 #        baz: xyz
   freebsd_instance:
     matrix:
-      image: freebsd-13-0-snap
-      image: freebsd-12-1
-      image: freebsd-12-1-snap
-      image: freebsd-12-0
-      image: freebsd-12-0-snap
-      image: freebsd-11-3
-      image: freebsd-11-3-snap
+      image_family: freebsd-13-0-snap
+      image_family: freebsd-12-1
+      image_family: freebsd-12-1-snap
+      image_family: freebsd-12-0
+      image_family: freebsd-12-0-snap
+      image_family: freebsd-11-3
+      image_family: freebsd-11-3-snap
 #    cpu: 8
 #    memory: 24G
 #  install_script:
