@@ -9,21 +9,17 @@ task:
 #        bar: abc
 #      - foo: 789
 #        baz: xyz
-  matrix:
-    - name: 13-CURRENT
-      freebsd_instance:
+  freebsd_instance:
+    matrix:
+      - name: 13-CURRENT
         image_family: freebsd-13-0-snap
-    - name: 12.1-STABLE
-      freebsd_instance:
+      - name: 12.1-STABLE
         image_family: freebsd-12-1-snap
-    - name: 12.1-RELEASE
-      freebsd_instance:
+      - name: 12.1-RELEASE
         image_family: freebsd-12-1
-    - name: 11.3-STABLE
-      freebsd_instance:
+      - name: 11.3-STABLE
         image_family: freebsd-11-3-snap
-    - name: 11.3-RELEASE
-      freebsd_instance:
+      - name: 11.3-RELEASE
         image_family: freebsd-11-3
 #    cpu: 8
 #    memory: 24G
