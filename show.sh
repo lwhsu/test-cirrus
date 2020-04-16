@@ -2,6 +2,8 @@
 
 set -x
 
+neofetch
+
 uname -a
 
 env
