@@ -22,9 +22,9 @@ task:
     - name: 11.3-STABLE
       freebsd_instance:
         image_family: freebsd-11-3-snap
-    - name: 11.3-RELEASE
-      freebsd_instance:
-        image_family: freebsd-11-3
+#    - name: 11.3-RELEASE
+#      freebsd_instance:
+#        image_family: freebsd-11-3
 #    cpu: 8
 #    memory: 24G
   install_script:
