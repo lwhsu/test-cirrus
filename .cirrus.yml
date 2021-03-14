@@ -10,8 +10,6 @@ task:
 #      - foo: 789
 #        baz: xyz
   freebsd_instance:
-    cpu: 4
-    memory: 8g
     matrix:
       - name: 14-CURRENT
         image_family: freebsd-14-0-snap
