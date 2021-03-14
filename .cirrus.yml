@@ -9,27 +9,18 @@ task:
 #        bar: abc
 #      - foo: 789
 #        baz: xyz
-  matrix:
-    - name: 14-CURRENT
-      freebsd_instance:
+  freebsd_instance:
+    cpu: 4
+    memory: 8g
+    matrix:
+      - name: 14-CURRENT
         image_family: freebsd-14-0-snap
-        cpu: 4
-        memory: 8g
-    - name: 12.2-STABLE
-      freebsd_instance:
+      - name: 12.2-STABLE
         image_family: freebsd-12-2-snap
-        cpu: 4
-        memory: 8g
-    - name: 12.2-RELEASE
-      freebsd_instance:
+      - name: 12.2-RELEASE
         image_family: freebsd-12-2
-        cpu: 4
-        memory: 8g
-    - name: 11.4-RELEASE
-      freebsd_instance:
+      - name: 11.4-RELEASE
         image_family: freebsd-11-4
-        cpu: 4
-        memory: 8g
   install_script:
     - sed -i.bak -e 's,pkg+http://pkg.FreeBSD.org/\${ABI}/quarterly,pkg+http://pkg.FreeBSD.org/\${ABI}/latest,' /etc/pkg/FreeBSD.conf
     - ASSUME_ALWAYS_YES=yes pkg bootstrap -f
