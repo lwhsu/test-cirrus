@@ -1,8 +1,6 @@
 env:
   CIRRUS_CLONE_DEPTH: 1
   ARCH: amd64
-  CPU: 8
-  MEMORY: 16G
 
 task:
 #  env:
@@ -15,15 +13,23 @@ task:
     - name: 14-CURRENT
       freebsd_instance:
         image_family: freebsd-14-0-snap
+        cpu: 4
+        memory: 8g
     - name: 12.2-STABLE
       freebsd_instance:
         image_family: freebsd-12-2-snap
+        cpu: 4
+        memory: 8g
     - name: 12.2-RELEASE
       freebsd_instance:
         image_family: freebsd-12-2
+        cpu: 4
+        memory: 8g
     - name: 11.4-RELEASE
       freebsd_instance:
         image_family: freebsd-11-4
+        cpu: 4
+        memory: 8g
   install_script:
     - sed -i.bak -e 's,pkg+http://pkg.FreeBSD.org/\${ABI}/quarterly,pkg+http://pkg.FreeBSD.org/\${ABI}/latest,' /etc/pkg/FreeBSD.conf
     - ASSUME_ALWAYS_YES=yes pkg bootstrap -f
