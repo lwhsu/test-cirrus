@@ -14,13 +14,17 @@ task:
     memory: 8g
   matrix:
     - name: 14-CURRENT
-      image_family: freebsd-14-0-snap
+      freebsd_instance:
+        image_family: freebsd-14-0-snap
     - name: 12.2-STABLE
-      image_family: freebsd-12-2-snap
+      freebsd_instance:
+        image_family: freebsd-12-2-snap
     - name: 12.2-RELEASE
-      image_family: freebsd-12-2
+      freebsd_instance:
+        image_family: freebsd-12-2
     - name: 11.4-RELEASE
-      image_family: freebsd-11-4
+      freebsd_instance:
+        image_family: freebsd-11-4
   install_script:
     - sed -i.bak -e 's,pkg+http://pkg.FreeBSD.org/\${ABI}/quarterly,pkg+http://pkg.FreeBSD.org/\${ABI}/latest,' /etc/pkg/FreeBSD.conf
     - ASSUME_ALWAYS_YES=yes pkg bootstrap -f
