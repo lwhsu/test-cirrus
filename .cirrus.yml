@@ -32,4 +32,5 @@ task:
     - pkg update
     - pkg install -y neofetch
   script:
-    - ./show.sh
+#    - ./show.sh
+    - ./test-bash.sh
