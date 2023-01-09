@@ -26,4 +26,4 @@ cat /var/run/dmesg.boot
 
 sysctl -A
 
-bash -c 'echo "Hello world!"'
+bash -c 'export TMOUT=5; echo "Hello"; sleep 10; echo " world!"'
