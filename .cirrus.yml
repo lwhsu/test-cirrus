@@ -19,10 +19,10 @@ task:
     - name: 14-CURRENT
       compute_engine_instance:
         image: family/freebsd-14-0-snap
-    - name: 13.0-RELEASE
+    - name: 13.1-RELEASE
       compute_engine_instance:
         image: family/freebsd-13-1
-    - name: 12.2-RELEASE
+    - name: 12.4-RELEASE
       compute_engine_instance:
         image: family/freebsd-12-4
   install_script:
