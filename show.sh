@@ -25,3 +25,5 @@ cat /etc/rc.conf
 cat /var/run/dmesg.boot
 
 sysctl -A
+
+bash -c 'echo "Hello world!"'
