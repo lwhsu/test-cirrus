@@ -14,6 +14,8 @@ drill pkg.freebsd.org
 
 mount -t tmpfs tmpfs /usr/obj
 
+ls -al /usr/src
+
 df -h
 
 ls /etc/pkg/
